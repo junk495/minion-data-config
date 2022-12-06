@@ -3,6 +3,12 @@ host = 0.0.0.0
 port = 7125
 klippy_uds_address = /home/pi/Minion_data/comms/klippy.sock
 
+[file_manager]
+enable_object_processing = True
+
+[update_manager]
+channel = dev
+
 [authorization]
 trusted_clients = 
 	10.0.0.0/8
@@ -20,20 +26,13 @@ cors_domains =
 	https://app.fluidd.xyz
 	http://app.fluidd.xyz
 
-[octoprint_compat]
-
-[history]
-
-[update_manager]
-channel = dev
-refresh_interval = 168
-
 [update_manager mainsail]
 type = web
 channel = stable
 repo = mainsail-crew/mainsail
 path = ~/mainsail
 
-[file_manager]
-enable_object_processing = True
+[history]
+
+[octoprint_compat]
 
